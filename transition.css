@@ -1,0 +1,61 @@
+body {
+  background-color: #000000;
+  border-width: 15px;
+  border-style: outset;
+  border-color: blue green yellow red;
+  animation-name: border;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes border {
+  0%,
+  100% {
+    border-color: blue green yellow red;
+  }
+  25% {
+    border-color: red blue green yellow;
+  }
+  50% {
+    border-color: yellow red blue green;
+  }
+  75% {
+    border-color: green yellow red blue;
+  }
+}
+
+h1 {
+  text-align: center;
+  text-shadow: -3px 0 blue, 0 3px green, 3px 0 yellow, 0 -3px red;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 10em;
+  float: middle;
+  top: 50%;
+  left: 50%;
+  line-height: 350%;
+  animation-name: text-border;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text-border {
+  0%,
+  100% {
+    text-shadow: -3px 0 3px blue, 0 3px 3px green, 3px 0 3px yellow,
+      0 -3px 3px red;
+  }
+  25% {
+    text-shadow: -3px 0 3px red, 0 3px 3px blue, 3px 0 3px green,
+      0 -3px 3px yellow;
+  }
+  50% {
+    text-shadow: -3px 0 3px yellow, 0 3px 3px red, 3px 0 3px blue,
+      0 -3px 3px green;
+  }
+  75% {
+    text-shadow: -3px 0 3px green, 0 3px 3px yellow, 3px 0 3px red,
+      0 -3px 3px blue;
+  }
+}
